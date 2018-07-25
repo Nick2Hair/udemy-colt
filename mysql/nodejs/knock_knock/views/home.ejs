@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jokes</title>
+
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="joke">
+            <h1><%=joke %></h1>
+            <form action='/new_joke' method= "POST">
+                <button class="button" type="submit" name="new_joke">New Joke</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

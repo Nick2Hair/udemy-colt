@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paperjs Exercise</title>
+
+    <script type="text/javascript" src="paper-full.js"></script>
+    <link rel="stylesheet" href="paperjs_exercise.css">
+    <script type="text/paperscript" canvas="myCanvas">
+        
+        function createCircle(i , j) {
+            var colors = ["red" , "blue" , "purple" , "green" , "yellow"];
+            var color = getRandomColor(colors);
+            return new Path.Circle(new Point(i, j), 10).fillColor = colors[color];
+        }
+        
+        function getRandomColor(arr) {
+            return Math.floor(Math.random() * Math.floor(arr.length));
+        }
+
+    for(var i=10; i<10000; i+=100) {
+        for(var j=10; j<10000; j+=100)
+        createCircle(i , j);
+    }
+        
+    </script>
+
+
+    
+</head>
+<body>
+    <canvas id="myCanvas" resize="true"></canvas>
+</body>
+</html>

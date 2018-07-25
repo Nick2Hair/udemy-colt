@@ -1,0 +1,30 @@
+table {
+  margin: auto;
+  height:400px;
+  width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+tr, td {
+    width: 33%;
+}
+
+.border-right {
+    border-right: 5px solid black;
+    padding: auto;
+}
+
+.border-left {
+    border-left: 5px solid black;
+}
+.border-top {
+    border-top: 5px solid black;
+    padding: auto;
+}
+.border-bottom {
+    border-bottom: 5px solid black;
+    padding: auto;
+}
