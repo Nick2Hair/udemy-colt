@@ -1,0 +1,2 @@
+Hello from the messge.txt file!
+Goodbye!
