@@ -37,7 +37,7 @@ app.get('/' , (req, res) => {
 });
 
 app.get('/campgrounds' , (req, res) => {
-    //Get all campgroudns from DB
+    //Get all campgrounds from DB
     Campground.find({} , (err, allCampgrounds) => {
         if(err) {
             console.log(err);
@@ -75,6 +75,10 @@ app.get("/campgrounds/:id" , (req, res) => {
             res.render("show", {campground: foundCampground});
         }
     });
+});
+
+app.get('/campgrounds/new' , (req, res) => {
+    res.render("new.ejs");
 });
 
 app.listen(3000);
